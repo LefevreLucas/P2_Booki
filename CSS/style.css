@@ -2,6 +2,12 @@
     font-family:"Raleway";
 }
 
+#logo
+{
+    margin-right: auto;
+    padding-inline-start: 20px;
+}
+
 a
 {
     color: inherit;
@@ -24,10 +30,15 @@ nav a
 nav a:hover
 {
     border-top: 3px solid #0065fc;
+    
 }
 
-#logo
+@media  (max-width: 375px)
 {
-    margin-right: auto;
-    padding-inline-start: 20px;
+    .sub_nav 
+    {
+        border-bottom : 3px solid #0065fc;
+        justify-content: center;
+        width: 100%;
+    }
 }
