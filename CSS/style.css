@@ -56,7 +56,6 @@ a
     display: flex;
     align-items: center;
     
-    
 }
 
 .logo_loc
@@ -91,7 +90,7 @@ border-radius: 0 10px 10px 0;
     cursor: pointer;
 }
 
-.search_button_phone 
+.search_button_phone
 {
     display: none;
 }
@@ -99,33 +98,75 @@ border-radius: 0 10px 10px 0;
 
 /* Filter ----------- */
 
-.global_filter
+.global_filter 
 {
     background-color: yellowgreen;
     display: flex;
     align-items: center;
+    
+}
+
+.global_filter :hover
+{
+    background-color: #0065fc;
+    color: white;
+
+}
+.titre_filter
+{
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+
+
+.button_with_icon 
+{
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    margin : 0 25px 0 25px;
+    padding: 0 10px 0 0;
+    height: 43px ;
 }
 
 #bill
 {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: #0065fc;
+    border: 1px solid #DEEBFF ;
+    border-radius: 50%;
+    background-color:#DEEBFF;
+    margin: -1px;
+    width: 25px;
+    height: 25px;
 }
+
 .filter_bill
 {
-    background-color: yellow;
+    background-color: rgb(230, 230, 20);
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
-    
+
 }
 #child
 {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: #0065fc;
+    border: 1px solid #DEEBFF ;
+    border-radius: 50%;
+    background-color:#DEEBFF;
+    margin: -1px;
+    width: 25px;
+    height: 25px;
 }
 .filter_child
 {
@@ -133,31 +174,45 @@ border-radius: 0 10px 10px 0;
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
 }
 
 #heart
 {
-    padding: 15px;
-    color: #0065fc;-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #0065fc;
+    border: 1px solid #DEEBFF ;
+    border-radius: 50%;
+    background-color:#DEEBFF;
+    margin: -1px;
+    width: 25px;
+    height: 25px;
 }
+
 .filter_heart
 {
     background-color: turquoise;
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
 }
 
 #dog
 {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: #0065fc;
+    border: 1px solid #DEEBFF ;
+    border-radius: 50%;
+    background-color:#DEEBFF;
+    margin: -1px;
+    width: 25px;
+    height: 25px;
+    left: 25px;
 }
 .filter_dog
 {
@@ -165,16 +220,18 @@ border-radius: 0 10px 10px 0;
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px ;
 }
 #info
 {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: #0065fc;
-    border: 1px solid #ac0e0e;
-    border-radius: 200%;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
     
 }
 .filter_info
@@ -184,9 +241,6 @@ border-radius: 0 10px 10px 0;
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
-   
-    
 }
 
 
@@ -252,9 +306,17 @@ border-radius: 0 10px 10px 0;
             background-color:#0065fc;
             color: white;
         }
+
+/* Filter ----------- */
+        .global_filter
+        {
+            flex-wrap: wrap
+        }
+
+
+
+
+
     }
         
-
-
-
 
