@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4358d3b40a.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
+
 <body>
-<header>
-    <!---Navigation---->
-   <nav> 
-       <div class="global_nav">
-            <div class="logo">
-                <img src="images/logo/Booki@3x.png" title="logo du site" id="logo"/>
-             </div>
-            <div class="sub_nav">
-                <a href="#">Hébergement</a>
-                <a href="#">Activités</a>
+    <header>
+        <!---Navigation---->
+        <nav>
+            <div class="global_nav">
+                <div class="logo">
+                    <img src="images/logo/Booki@3x.png" title="logo du site" id="logo" />
+                </div>
+                <div class="sub_nav">
+                    <a href="#">Hébergement</a>
+                    <a href="#">Activités</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    
-</header>
-<!---bar search-->
-<div class="global_search">
-    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
+        </nav>
 
-    <div class="bar_search">
-        <div class="logo_loc">
-            <i class="fas fa-map-marker-alt fa-1x"></i>
-        </div>
+    </header>
+    <!---bar search-->
+    <div class="global_search">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
 
-        <div class="search_form">
-            <form><input name="search_value" placeholder="Marseille. France"></form>
-        </div>
+        <div class="bar_search">
+            <div class="logo_loc">
+                <i class="fas fa-map-marker-alt fa-1x"></i>
+            </div>
 
-        <div class="search_button_desktop">
-            <button>Rechercher</button>
-        </div>
+            <div class="search_form">
+                <form><input name="search_value" placeholder="Marseille. France"></form>
+            </div>
 
-        <div class="search_button_phone">
-            <i class="fas fa-search"id="glass"></i>
+            <div class="search_button_desktop">
+                <button>Rechercher</button>
+            </div>
+
+            <div class="search_button_phone">
+                <i class="fas fa-search" id="glass"></i>
+            </div>
+
         </div>
 
     </div>
 
-</div>
+    <!--Filter-->
+    <div class="global_global">
 
-<!--Filter-->
-<div class="global_filter">
-<h2>Filtre</h2>
-    <div class="filter_bill button_with_icon">
+        <div class="titre">
+            <h2>Filtre</h2>
+        </div>
 
-            <i class="fas fa-money-bill-wave" id="bill"></i>
-        <div class="titre_filter">
-            <h3><a href="#">Économique</a></h3>
+        <div class="global_filter">
+            
+                <div class="filter_bill button_with_icon">
+
+                    <i class="fas fa-money-bill-wave" id="bill"></i>
+                    <div class="titre_filter">
+                        <h3><a href="#">Économique</a></h3>
+                    </div>
+                </div>
+
+                <div class="filter_child button_with_icon">
+                    <i class="fas fa-child fa-lg" id="child"></i>
+                    <div class="titre_filter">
+                        <h3><a href="#">Familial</a></h3>
+                    </div>
+                </div>
+
+                <div class="filter_heart button_with_icon">
+                    <i class="fas fa-heart fa-lg" id="heart"></i>
+                    <div class="titre_filter">
+                        <h3><a href="#">Romantique</a></h3>
+                    </div>
+                </div>
+
+                <div class="filter_dog button_with_icon">
+                    <i class="fas fa-dog fa-lg" id="dog"></i>
+                    <div class="titre_filter">
+                        <h3><a href="#">Animaux autorisés</a></h3>
+                    </div>
+                </div>
+
+        
         </div>
     </div>
 
-    <div class="filter_child button_with_icon">
-            <i class="fas fa-child fa-lg" id="child"></i>
-        <div class="titre_filter">
-            <h3><a href="#">Familial</a></h3>
-        </div>  
-    </div>
 
-    <div class="filter_heart button_with_icon">
-            <i class="fas fa-heart fa-lg" id="heart"></i>
-        <div class="titre_filter">
-            <h3><a href="#">Romantique</a></h3>
-        </div>
-    </div>
-
-    <div class="filter_dog button_with_icon">
-            <i class="fas fa-dog fa-lg" id="dog"></i>
-        <div class="titre_filter">
-            <h3><a href="#">Animaux autorisés</a></h3>
-        </div>
-    </div>
-</div>
-
-<div class="filter_info">
-        <i class="fas fa-info fa-xs"id="info"></i>
+    <div class="filter_info">
+        <i class="fas fa-info fa-xs" id="info"></i>
         <p>Plus de 500 logements sont disponible dans cette ville</p>
     </div>
 
@@ -102,19 +114,20 @@
             <div>chambre</div>
             <div>chambre</div>
         </div>
-        
+
         <div class="most_popular">
             <h3>Les plus populaires</h3>
             <div>chambre</div>
             <div>chambre</div>
             <div>chambre</div>
         </div>
-         
+
     </div>
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
 
 </body>
+
 </html>
