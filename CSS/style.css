@@ -83,18 +83,17 @@ a {
 .global_filter {
     display: flex;
     align-items: center;
-    
 }
 
-.global_filter :hover 
-{
+.global_filter :hover {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0065fc;
     color: white;
 }
-.global_global{
+
+.global_global {
     display: flex;
     align-items: center;
 }
@@ -213,7 +212,6 @@ a {
 
 .filter_info {
     align-items: flex-start;
-    background-color: wheat;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -228,19 +226,120 @@ a {
     border-radius: 25px;
 }
 
-.chamber_city {
-    border: 3px solid yellowgreen;
-    background-color: #F2F2F2;
+.global_card>div {
+    
+    padding: 10px;
     border-radius: 15px;
-    flex-basis: 66%;
-    margin-right: 50px;
 }
 
+.city {
+    background-color: #F2F2F2;
+    flex-basis: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    height: fit-content;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.city a {
+    display: flex;
+    font-weight: bold;
+}
+
+.chamber_city {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chamber_city div {
+    margin: 20px;
+    border-radius: 15px;
+    max-height: 10%;
+}
+
+.card_city {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 16px #0000002e;
+    height: 50%;
+    
+}
+
+.card_city h3, .card_city p {
+    margin: 3px;
+}
+
+.card_city img {
+    border-radius: 15px 15px 0 0;
+    display: block;
+    max-width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* Popular city ----------- */
+
 .most_popular {
-    border: 3px solid red;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 15px;
-    flex-basis: 33%;
+}
+
+.chart {
+    display: flex;
+    float: right;
+}
+
+.most_popular div {
+    display: flex;
+    border-radius: 15px;
+    margin: 0 0 35px 0;
+    max-width: 100%;
+    height: 140px;
+}
+
+.card_most {
+    background-color: white;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.popular_description h3, .popular_description p {
+    display: flex;
+    margin: 0;
+    margin-bottom: auto;
+}
+
+.popular_description {
+    flex-direction: column;
+}
+
+.most_popular img {
+    border-radius: 15px 0 0 15px;
+    max-width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+    width: 200px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+/* Color stars ----------- */
+
+.blue {
+    color: #0065fc;
+}
+
+.grey {
+    color: #d9d9d9;
 }
 
 /* Tablet ----------- */
@@ -266,6 +365,9 @@ a {
         border-top: none;
     }
     /*--bar search--*/
+    .global_search h1 {
+        font-size: x-large;
+    }
     .bar_search {
         justify-content: center;
     }
@@ -284,7 +386,36 @@ a {
         color: white;
     }
     /* Filter ----------- */
+    .global_global {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .global_filter {
-        flex-wrap: wrap
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titre {
+        display: flex;
+    }
+    /*--Accommodation city--*/
+    .global_card {
+        flex-direction: column-reverse;
+    }
+    .city {
+        margin-right: 0;
+        background-color: transparent;
+    }
+    .card_city {
+        width: 100%;
+    }
+    .card_city img {
+        max-width: 100%;
+        max-height: 100px;
+        width: inherit;
+    }
+
+    .most_popular{
+        border: 1px solid #F2F2F2;
+        border-radius: initial;
     }
 }
